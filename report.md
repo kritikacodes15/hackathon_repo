@@ -152,9 +152,7 @@ story_YYY,1,All core backstory claims are consistent
 
 ---
 
-### ✅ Step 3: Keep ONE Conclusion only
 
-Immediately after that, keep **only this**:
 
 ```md
 ## 10. 🏁 Conclusion
@@ -167,6 +165,7 @@ By combining:
 - **Deterministic aggregation**
 
 the pipeline ensures **evidence-grounded decisions** while effectively handling **long-context narratives**.
+
 
 
 
