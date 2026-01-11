@@ -151,28 +151,35 @@ This prevents critical contradictions from being diluted by majority voting or p
     "claims": [
       {
         "claim_id": "claim_1",
-        "score": 0 or 1,
-        "core": true or false
+        "score": 0,
+        "core": true
       }
     ]
   }
 }
 
-
-Output (results.csv)
-csv
+yaml
 Copy code
+
+🔹 **Important**  
+JSON must contain **real values**, not `or 1`, `true or false`.
+
+If you want to *explain* options, do it **outside** the JSON.
+
+---
+
+### 🔹 Output (`results.csv`)
+
+```md
+### **Output (`results.csv`)**
+
+```csv
 story_id,prediction,rationale
-Field Definitions
-story_id → Unique identifier
+yaml
 
-prediction → 1 (Consistent) / 0 (Contradict)
+### **Dummy Example**
 
-rationale → Short human-readable explanation
-
-Dummy Example
-csv
-Copy code
+```csv
 story_XXX,0,A core backstory claim contradicts the narrative
 story_YYY,1,All core backstory claims are consistent
 10. 🏁 Conclusion
@@ -187,5 +194,6 @@ Structured claim-level reasoning
 Deterministic aggregation
 
 the pipeline ensures evidence-grounded decisions while effectively handling long-context narratives.
+
 
 
