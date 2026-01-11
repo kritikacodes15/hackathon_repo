@@ -143,7 +143,7 @@ This prevents critical contradictions from being diluted by majority voting or p
 
 ## 9. 📥 Input & 📤 Output Specification
 
-
+### Input (Placeholder)
 
 ```json
 {
@@ -160,15 +160,21 @@ This prevents critical contradictions from being diluted by majority voting or p
 
 
 
-## Output (`results.csv`)
 
-```csv
+## Output (`results.csv`)
 story_id,prediction,rationale
-Dummy Example
-csv
-Copy code
 story_XXX,0,A core backstory claim contradicts the narrative
 story_YYY,1,All core backstory claims are consistent
+
+
+---
+
+
+
+```md
+## 10. Conclusion
+
+
 10. 🏁 Conclusion
 This system provides a robust, explainable, and scalable approach to verifying backstory–narrative consistency in long-form fiction.
 
@@ -181,6 +187,7 @@ Structured claim-level reasoning
 Deterministic aggregation
 
 the pipeline ensures evidence-grounded decisions while effectively handling long-context narratives.
+
 
 
 
