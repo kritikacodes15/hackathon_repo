@@ -42,20 +42,25 @@ Full Novel
  → Deterministic Aggregation
  → Final Binary Decision (results.csv)
 
-🗺️ System Architecture Diagram
+## 🗺️ System Architecture Diagram
+
+```mermaid
 flowchart LR
 
+    %% Novel Processing
     subgraph N["📘 Novel Processing"]
         A["Full Novel<br/>(100k+ words)"] --> B["Chunking"]
         B --> C["Novel Chunks<br/>(chunk_id + text)"]
         C --> D["Pathway Semantic Index"]
     end
 
+    %% Backstory Processing
     subgraph S["🧬 Backstory Processing"]
         E["Hypothetical Backstory"] --> F["Claim Decomposition"]
         F --> H["Atomic Claims<br/>(core / non-core)"]
     end
 
+    %% Reasoning
     subgraph R["🧠 Reasoning"]
         D -->|Semantic Retrieval| G["Relevant Narrative Chunks"]
         H --> I["Claim-Level Reasoning<br/>(LLM)"]
@@ -63,6 +68,7 @@ flowchart LR
         I --> J["Claim Scores<br/>(score, core)"]
     end
 
+    %% Aggregation
     subgraph A2["🧮 Aggregation & Output"]
         J --> K["Deterministic Aggregation"]
         K --> L["Final Decision"]
@@ -70,7 +76,7 @@ flowchart LR
     end
 
 
-Figure 1. End-to-end architecture of the backstory–narrative consistency verification system.
+
 
 3. 📚 Long-Context Handling: Novel Chunking & Indexing
 
@@ -226,6 +232,7 @@ Structured claim-level reasoning
 Deterministic aggregation
 
 the pipeline ensures evidence-grounded decisions while effectively handling long-context narratives.
+
 
 
 
