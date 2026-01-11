@@ -40,12 +40,12 @@ Full Novel
  → Claim-Level Reasoning (LLM)
  → Deterministic Aggregation
  → Final Binary Decision (results.csv)
-
-flowchart TD
+  ## 🗺️ System Architecture Diagram
+ flowchart TD
     A[Full Novel<br/>(100k+ words)] --> B[Chunking]
     B --> C[Novel Chunks<br/>(chunk_id + text)]
     C --> D[Pathway Index]
-    
+
     D -->|Semantic Retrieval| G[Relevant Narrative Chunks]
 
     E[Hypothetical Backstory] --> F[Claim Decomposition]
@@ -59,9 +59,7 @@ flowchart TD
     J --> K[Deterministic Aggregation]
     K --> L[Final Decision]
 
-    L --> M[results.csv<br/>(story_id, prediction, rationale)]
-
-
+    L --> M[results.csv<br/>(story_id, prediction, rationale)] 
 
 3. 📚 Long-Context Handling: Novel Chunking & Indexing
 
@@ -221,5 +219,6 @@ Pathway-based semantic retrieval
 Structured claim-level reasoning
 
 Deterministic aggregation
+
 
 the pipeline ensures evidence-grounded decisions while effectively handling long-context narratives.
