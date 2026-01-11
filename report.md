@@ -47,36 +47,29 @@ Full Novel
 ```mermaid
 flowchart LR
 
-    %% Novel Processing
-    subgraph N["📘 Novel Processing"]
-        A["Full Novel<br/>(100k+ words)"] --> B["Chunking"]
-        B --> C["Novel Chunks<br/>(chunk_id + text)"]
+    subgraph Novel["Novel Processing"]
+        A["Full Novel (100k+ words)"] --> B["Chunking"]
+        B --> C["Novel Chunks (chunk_id + text)"]
         C --> D["Pathway Semantic Index"]
     end
 
-    %% Backstory Processing
-    subgraph S["🧬 Backstory Processing"]
+    subgraph Backstory["Backstory Processing"]
         E["Hypothetical Backstory"] --> F["Claim Decomposition"]
-        F --> H["Atomic Claims<br/>(core / non-core)"]
+        F --> H["Atomic Claims (core / non-core)"]
     end
 
-    %% Reasoning
-    subgraph R["🧠 Reasoning"]
+    subgraph Reasoning["Claim-Level Reasoning"]
         D -->|Semantic Retrieval| G["Relevant Narrative Chunks"]
-        H --> I["Claim-Level Reasoning<br/>(LLM)"]
+        H --> I["LLM Reasoning"]
         G --> I
-        I --> J["Claim Scores<br/>(score, core)"]
+        I --> J["Claim Scores (score, core)"]
     end
 
-    %% Aggregation
-    subgraph A2["🧮 Aggregation & Output"]
+    subgraph Output["Aggregation & Output"]
         J --> K["Deterministic Aggregation"]
         K --> L["Final Decision"]
-        L --> M["results.csv<br/>(story_id, prediction, rationale)"]
+        L --> M["results.csv (story_id, prediction, rationale)"]
     end
-
-
-
 
 3. 📚 Long-Context Handling: Novel Chunking & Indexing
 
@@ -232,6 +225,7 @@ Structured claim-level reasoning
 Deterministic aggregation
 
 the pipeline ensures evidence-grounded decisions while effectively handling long-context narratives.
+
 
 
 
