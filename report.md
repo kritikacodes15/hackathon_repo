@@ -143,50 +143,35 @@ This prevents critical contradictions from being diluted by majority voting or p
 
 ## 9. 📥 Input & 📤 Output Specification
 
-### Input (Placeholder)
+### Output (`results.csv`)
 
-```json
-{
-  "story_XXX": {
-    "claims": [
-      {
-        "claim_id": "claim_1",
-        "score": 0,
-        "core": true
-      }
-    ]
-  }
-}
-
-
-
-
-## Output (`results.csv`)
+```csv
 story_id,prediction,rationale
 story_XXX,0,A core backstory claim contradicts the narrative
 story_YYY,1,All core backstory claims are consistent
 
-
 ---
 
+### ✅ Step 3: Keep ONE Conclusion only
 
+Immediately after that, keep **only this**:
 
 ```md
-## 10. Conclusion
+## 10. 🏁 Conclusion
 
-
-10. 🏁 Conclusion
-This system provides a robust, explainable, and scalable approach to verifying backstory–narrative consistency in long-form fiction.
+This system provides a **robust, explainable, and scalable** approach to verifying backstory–narrative consistency in long-form fiction.
 
 By combining:
+- **Pathway-based semantic retrieval**
+- **Structured claim-level reasoning**
+- **Deterministic aggregation**
 
-Pathway-based semantic retrieval
+the pipeline ensures **evidence-grounded decisions** while effectively handling **long-context narratives**.
 
-Structured claim-level reasoning
 
-Deterministic aggregation
 
-the pipeline ensures evidence-grounded decisions while effectively handling long-context narratives.
+
+
 
 
 
