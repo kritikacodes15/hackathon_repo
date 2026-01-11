@@ -158,28 +158,14 @@ This prevents critical contradictions from being diluted by majority voting or p
   }
 }
 
-yaml
-Copy code
 
-🔹 **Important**  
-JSON must contain **real values**, not `or 1`, `true or false`.
 
-If you want to *explain* options, do it **outside** the JSON.
-
----
-
-### 🔹 Output (`results.csv`)
-
-```md
 ### **Output (`results.csv`)**
 
-```csv
 story_id,prediction,rationale
-yaml
+
 
 ### **Dummy Example**
-
-```csv
 story_XXX,0,A core backstory claim contradicts the narrative
 story_YYY,1,All core backstory claims are consistent
 10. 🏁 Conclusion
@@ -194,6 +180,7 @@ Structured claim-level reasoning
 Deterministic aggregation
 
 the pipeline ensures evidence-grounded decisions while effectively handling long-context narratives.
+
 
 
 
