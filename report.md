@@ -152,9 +152,6 @@ story_YYY,1,All core backstory claims are consistent
 
 ---
 
-
-
-```md
 ## 10. 🏁 Conclusion
 
 This system provides a **robust, explainable, and scalable** approach to verifying backstory–narrative consistency in long-form fiction.
@@ -165,6 +162,7 @@ By combining:
 - **Deterministic aggregation**
 
 the pipeline ensures **evidence-grounded decisions** while effectively handling **long-context narratives**.
+
 
 
 
