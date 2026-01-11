@@ -1,4 +1,5 @@
-📘 **Backstory–Narrative Consistency Verification System**
+📘 # **Backstory–Narrative Consistency Verification System**
+
 Track A: Systems Reasoning with NLP & Generative AI
 1. 🧩 Problem Statement
 
@@ -197,6 +198,7 @@ Structured claim-level reasoning
 Deterministic aggregation
 
 the pipeline ensures evidence-grounded decisions while effectively handling long-context narratives.
+
 
 
 
