@@ -157,6 +157,8 @@ This prevents critical contradictions from being diluted by majority voting or p
     ]
   }
 }
+
+
 Output (results.csv)
 csv
 Copy code
@@ -184,5 +186,6 @@ Structured claim-level reasoning
 
 Deterministic aggregation
 
-**the pipeline ensures evidence-grounded decisions while effectively handling long-context narratives.**
+the pipeline ensures evidence-grounded decisions while effectively handling long-context narratives.
+
 
